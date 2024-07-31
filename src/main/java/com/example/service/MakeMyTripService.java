@@ -15,7 +15,7 @@ public class MakeMyTripService {
 	
 	public Ticket bookTicket(Passenger p) {
 		
-		String  apiurl="35.164.71.130:8080/ticket";
+		String  apiurl="http://localhost:8080/ticket";
 		RestTemplate rs = new RestTemplate();
 		
 		ResponseEntity<Ticket> postForEntity = rs.postForEntity(apiurl,p,Ticket.class);
