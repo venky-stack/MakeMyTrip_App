@@ -25,7 +25,7 @@ public class MakeMyTripService {
 	
 	public List<Ticket> getTicket() {
 		
-		String apiUrl="35.164.71.130:8080/tickets";
+		String apiUrl="http://localhost:8080/tickets";
 		RestTemplate rs= new RestTemplate();
 		
 		ResponseEntity<Ticket> forEntity = rs.getForEntity(apiUrl,Ticket.class);
